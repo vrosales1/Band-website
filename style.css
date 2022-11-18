@@ -1,0 +1,11 @@
+.logo {
+  width: 190px;
+  flex: auto;
+}
+
+body {
+  background-image: url("mushroom background.png");
+  height: auto;
+  width: auto;
+  flex-grow: inherit;
+}
