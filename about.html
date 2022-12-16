@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://www.santana.com/">
+          <img src="./SANTANA LOGO.png" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-white" href="index.html">Home </a>
+
+          <a class="navbar-item has-text-white" href="about.html">About </a>
+
+          <a class="navbar-item has-text-white" href="music-videos.html"
+            >Music Videos</a
+          >
+
+          <a class="navbar-item has-text-white" href="discography.html"
+            >Discography
+          </a>
+
+          <a class="navbar-item has-text-white" href="tour.html">Tour </a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mx-1"
+    >
+      <img src="bandgroup.jpg" />
+
+      <h2>MEET THE BAND</h2>
+      <span class="meet has-text-white">
+        An American Rock Band formed in San Francisco in 1966 by American
+        Guitarist, Carlos Santana. Signing with Columbia Records, the band's
+        appearance at the WoodStock Festival in 1969 increased their profile and
+        went on to record successful and critically-acclaimed albums. Santana is
+        one of the best-selling groups of all time with over 47 million
+        certified albums sold in the US, and an estimated 100 million sold
+        worldwide.</span
+      >
+    </div>
+
+    <div class="columns mt-3 mx-1">
+      <div class="column">
+        <img src="Carlos Santana.jpg" />
+      </div>
+      <div class="column">
+        <h2>CARLOS SANTANA</h2>
+        <p>
+          Influenced by the San Francisco Bay Area's burgeoning rock scene, in
+          1966 he formed the Santana Blues Band, which came to the attention of
+          rock music impresario Bill Graham. The band began performing at the
+          legendary club Fillmore West, and, though largely unknown, it
+          triumphed at the Woodstock festival in 1969.The Latin influence in
+          Santana's sounds made him "outside of the box." While he fit in with
+          the psychedelic rock of the time, his fans were not limited to one
+          scene or sound. He shared many influences with his contemporaries,
+          only there was an additional current of Latin music to distinguish his
+          rock sound.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center mx-1"
+    >
+      <h1>Social Media</h1>
+
+      <a
+        class="social media-item has-text-white"
+        href="https://www.instagram.com/carlossantana/?hl=en"
+      >
+        <p>Instagram</p>
+      </a>
+
+      <a
+        class="social media-item has-text-white"
+        href="https://twitter.com/santanacarlos"
+      >
+        <p>Twitter</p>
+      </a>
+
+      <a
+        class="social media-item has-text-white"
+        href="https://www.facebook.com/carlossantana/"
+      >
+        <p>Facebook</p>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

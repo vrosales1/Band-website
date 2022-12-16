@@ -1,11 +1,62 @@
-.logo {
-  width: 190px;
-  flex: auto;
+body {
+  background-image: url("mushroombackground.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.columns {
+  max-width: 100%;
+}
+#navbar-brand {
+  max-width: 90%;
+  display: none;
 }
 
-body {
-  background-image: url("mushroom background.png");
-  height: auto;
-  width: auto;
-  flex-grow: inherit;
+.navbar-burger {
+  background-color: transparent;
+  color: white;
+}
+
+nav,
+.navbar-menu {
+  background-color: transparent !important;
+  /* height: 20vh; */
+  /* height: fit-content; */
+}
+
+.navbar-item {
+  /* flex-direction: center !important; */
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+.logo {
+  flex: center;
+  height: 70vh;
+}
+
+h1 {
+  color: white;
+  font-family: "times new roman", Times, serif;
+  font-size: 20px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+p {
+  color: white;
+}
+
+.Meet {
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  size: 70px;
+  text-align: center;
 }
